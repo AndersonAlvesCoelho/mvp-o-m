@@ -12,7 +12,7 @@ services:
       - '.:/app'
       - '/app/node_modules'
     ports:
-      - 3005:3000
+      - 3007:3000
     tty: true
     environment:
       - CHOKIDAR_USEPOLLING=true
