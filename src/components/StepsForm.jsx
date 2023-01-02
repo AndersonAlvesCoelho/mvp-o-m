@@ -709,57 +709,61 @@ function StepsForm() {
   };
 
   async function feachtTestelogin_check() {
-    setLoading(true);
-    await fetch("http://127.0.0.1:5000/login_check", {
-      method: "POST",
-      mode: "no-cors",
-      credentials: "include",
-      body: JSON.stringify(requestForm),
-      cache: "no-cache",
-      headers: {
-        "Content-Type": "application/json",
-      },
-    }).then(function (res) {
-      console.log("res ", res);
-      // if (res.status !== 200) {
-      //   console.log(`Response status was not 200: ${res}`);
-      //   setLoading(false);
-      //   return;
-      // }
+    // setLoading(true);
+    // await fetch("http://127.0.0.1:5000/login_check", {
+    //   method: "POST",
+    //   mode: "no-cors",
+    //   credentials: "include",
+    //   body: JSON.stringify(requestForm),
+    //   cache: "no-cache",
+    //   headers: {
+    //     "Content-Type": "application/json",
+    //   },
+    // }).then(function (res) {
+    //   console.log("res ", res);
+    //   // if (res.status !== 200) {
+    //   //   console.log(`Response status was not 200: ${res}`);
+    //   //   setLoading(false);
+    //   //   return;
+    //   // }
 
-      setCheck(true);
+    //   setCheck(true);
 
-      res.json().then(function (data) {
-        console.log(data);
-      });
-      setLoading(false);
-    });
+    //   res.json().then(function (data) {
+    //     console.log(data);
+    //   });
+    //   setLoading(false);
+    // });
+    setCheck(true);
+    setLoading(false);
   }
 
   async function feachtTestecal_check() {
-    setLoading(true);
-    await fetch("http://127.0.0.1:5000/cal_orcamento", {
-      method: "POST",
-      mode: "no-cors",
-      credentials: "include",
-      body: JSON.stringify(requestForm),
-      cache: "no-cache",
-      headers: {
-        "Content-Type": "application/json",
-      },
-    }).then(function (res) {
-      // if (res.status !== 200) {
-      //   console.log(`Response status was not 200: ${res}`);
-      //   setLoading(false);
-      //   return;
-      // }
+    // setLoading(true);
+    // await fetch("http://127.0.0.1:5000/cal_orcamento", {
+    //   method: "POST",
+    //   mode: "no-cors",
+    //   credentials: "include",
+    //   body: JSON.stringify(requestForm),
+    //   cache: "no-cache",
+    //   headers: {
+    //     "Content-Type": "application/json",
+    //   },
+    // }).then(function (res) {
+    //   // if (res.status !== 200) {
+    //   //   console.log(`Response status was not 200: ${res}`);
+    //   //   setLoading(false);
+    //   //   return;
+    //   // }
 
-      setCheck(true);
+    //   setCheck(true);
 
-      console.log(res);
-      // res.json().then(function (data) {});
-      setLoading(false);
-    });
+    //   console.log(res);
+    //   // res.json().then(function (data) {});
+    //   setLoading(false);
+    // });
+    setCheck(true);
+    setLoading(false);
   }
 
   return (
